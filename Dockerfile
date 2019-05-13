@@ -4,8 +4,6 @@ WORKDIR /app
 # dependencies will be installed only if the package files change
 COPY package.json .
 
-ARG store_url
-
 RUN npm i
 
 RUN npm i -g wait-on
